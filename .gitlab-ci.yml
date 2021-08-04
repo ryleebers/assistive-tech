@@ -27,4 +27,4 @@ pages:
     - ls
   artifacts:
     paths:
-      -public
+      - public
