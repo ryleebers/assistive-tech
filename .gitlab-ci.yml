@@ -8,6 +8,8 @@ build:
   script:
     - yarn install      # Run `yarn install` and `yarn build`
     - yarn build
+    - CI=false npm run build
+    - CI=false npm install
   artifacts:
     paths:
       - build/          # Save the build result as an artfact
