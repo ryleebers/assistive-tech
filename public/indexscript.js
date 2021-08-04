@@ -3,7 +3,7 @@ document.getElementById("request-id").addEventListener("click", request);
 document.getElementById("hearing-id").addEventListener("click", requestHearing);
 document.getElementById("vision-id").addEventListener("click", requestVisual);
 document.getElementById("cognitive-id").addEventListener("click", requestCognitive);
-
+ 
 
 // homepage button functions
 // opens new window and redirects to assitive technology hub request form
