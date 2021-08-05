@@ -8,7 +8,7 @@ document.getElementById("start-btn").addEventListener("click", startQuiz);
 const startbutton = document.getElementById("start-btn");
 const submitButton = document.getElementById("submit-btn");
 const recommendationspage = document.getElementById("rec-page");
- 
+
 // sends user back to home screen 
 function returnHome() {
     window.location.href = "index.html";
