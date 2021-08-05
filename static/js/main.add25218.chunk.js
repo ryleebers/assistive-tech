@@ -1,0 +1,2 @@
+(this["webpackJsonpassistive-technology"]=this["webpackJsonpassistive-technology"]||[]).push([[0],{4:function(e,s,t){"use strict";t.r(s);t(0);var n=t(2),o=t.n(n),c=t(3);o.a.render(Object(c.jsx)("p",{}),document.getElementById("root"))}},[[4,1,2]]]);
+//# sourceMappingURL=main.add25218.chunk.js.map

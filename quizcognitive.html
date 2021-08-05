@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizstyles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script defer src="quizcognitivescript.js"></script>
+    <title>Dell | Cognitive Quiz</title>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/dell-4-569248.png">
+    <!--need to find Dell official icon 256x256 or 128x128 size for browser tab picture-->
+</head>
+
+<body>
+    <div class="pageBody">
+        <!-- header -->
+        <div class="header">
+            <div><button id="home-id" class="home"><i class="fa fa-home fa-lg"></i> Home</button></div>
+            <div class="headerPadding"> 
+            <div class="logo"><div class="logoIcon"></div></div>
+            <div class="headerDivider"></div>
+            <div class="headerText">Assistive Technology Hub</div></div>
+        </div>
+
+        <!-- navigation header info -->
+        <div class="breadcrumbContainer">
+            <div class="homeNavContainer">
+                <div class="homeNavIcon"><i class="fa fa-home fa-2x"></i></div>
+                <div class="navagationArrow1"><span><i class="fa fa-angle-right fa-lg"></i></span></div>
+            </div>
+            <div class="quizNavContainer">
+                <span class="quizNameText">Cognitive Quiz</span>
+                <div class="navagationArrow2"><span><i class="fa fa-angle-right fa-lg"></i></span></div>
+            </div>
+            <div class="questionNavContainer">
+                <span class="qNumberText">Question 1</span>
+            </div>
+        </div>
+
+        <!-- cognitive quiz question 1 -->
+        <div class="quizBody"><h1 id="question-id" class="quizQuestion hide">Do you have difficult understanding speech??</h1>
+            <div id="answer-buttons" class="btn-grid hide">
+                <div class="q1_body"><button id="btnid" class="btn">Yes</button></div>
+                <div class="q2_body"><button id="btnid" class="btn">No</button></div>
+            </div>
+            <div class="initial-end">
+                <button id="start-btn" class="start-btn btn">Start Cognitive Quiz</button>
+                <button id="submit-btn" class="submit-btn btn hide">Submit</button>
+            </div>
+        </div>
+
+        <!-- vision progress bar -->
+        <div aria-valuemin=1 aria-valuemax=5 aria-valuenow=1 class="progressBar" id="progressBarID">
+            <div class="progress" id="progressID"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">Submit</div>
+        </div>
+
+        <!-- footer -->
+        <span class="footerBody">© 2021 Dell Digital | Chloe Rice, Rylee Bers, Harsha Siripurapu, Casey Brenner, and Pierce Phillips</span>
+    </div>
+
+    <!-- recommendations page-->
+    <div class="recommendationsPage hide" id="rec-page">
+        <div class="recBodyCognitive">
+            <!-- header -->
+            <div class="header">
+                <div><button id="recHome-id" class="home"><i class="fa fa-home"></i> Home</button></div>
+                <div class="headerPadding"> 
+                <div class="logo"><div class="logoIcon"></div></div>
+                <div class="headerDivider"></div>
+                <div class="headerText">Assistive Technology Hub</div></div>
+            </div>
+            <span class="pageTitle">Assistive Technology for You</span><span class="pageDesc">The following assistive technologies have been chosen to fit your unique needs and help improve improve your work environment. Click on any card to learn more about the tool and how to access it.</span>
+            
+            <!-- No Recommendations Available Message -->
+            <span class="noRecTitle hide" id="norecID">Unfortunately there are no technologies currently approved by Dell that fit your needs. Click <a href="https://inside.dell.com/community/active/assistive-technology/pages/technology-suggestion" target="_blank">here</a> to request more technologies to be approved that meet your needs.
+            If you would like to take a look at what assistive technology Dell currently has offered, click <a href=="https://inside.dell.com/community/active/assistive-technology" target="_blank">here.</a>You can also check out our vision and hearing quizzes at the home page.</span>
+            
+            <!-- Narration Tools -->
+            <div class="narrationtools hide" id="narrationID"><span class="toolCategory">Narration Tools</span>
+                <div class="narrationline1 hide" id="narrationline1ID">
+                    <div class="naturalreader3 hide" id="1">
+                        <div class="naturalreadertitlecontainer3"><span class="naturalreadertitle3">NaturalReader</span><span class="naturalreadersource3">Naturalsoft</span></div>
+                        <div class="naturalreaderdescontainer3"></div><span class="naturalreaderdes3">Text-to-speech program that converts written text from multiple formats into spoken words using a synthetic voice</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10" target="_blank">Get NaturalReader</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="readaloud3 hide" id="2">
+                        <div class="readaloudtitlecontainer3"><span class="readaloudtitle3">Read Aloud</span><span class="readaloudsource3">LSD Software</span></div>
+                        <div class="readalouddescontainer3"></div><span class="readalouddes3">Text-to-speech application that can read aloud web pages and documents</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://support.microsoft.com/en-us/office/listen-to-your-word-documents-5a2de7f3-1ef4-4795-b24e-64fc2731b001" target="_blank">Get Read Aloud</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="immersivereader3 hide" id="3">
+                        <div class="immersivereadertitlecontainer3"><span class="immersivereadertitle3">Immersive Reader</span><span class="immersivereadersource3">Microsoft</span></div>
+                        <div class="immersivereaderdescontainer3"></div><span class="immersivereaderdes3">Uses proven techniques to improve reading for people regardless of their age or ability</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://support.microsoft.com/en-us/topic/use-immersive-reader-in-microsoft-teams-a700c0d0-bc53-4696-a94d-4fbc86ac7a9a" target="_blank">Get Immersive Reader</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="noRecCard hide" id="noRecCardNID">
+                        <span class="noRecText">There are no technologies recommended from this category.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Visualization Tools -->
+            <div class="textvisualization3 hide" id="textvisualizationID"><span class="toolCategory">Text Visualization Tools</span>
+                <div class="textvisualizationline1 hide" id="textvisualizationline1ID">
+                    <div class="naturallyspeaking3 hide" id="4">
+                        <div class="naturallyspeakingtitlecontainer3"><span class="naturallyspeakingtitle3">Naturally Speaking</span><span class="naturallyspeakingsource3">Dragon Systems</span></div>
+                        <div class="naturallyspeakingdescontainer3"></div><span class="naturallyspeakingdes3">Dictation software that converts speech to text leveraging advanced Deep Learning technology</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10" target="_blank">Get Naturally Speaking</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="teamscaptions3 hide" id="5">
+                        <div class="teamscaptionstitlecontainer3"><span class="teamscaptionstitle3">Closed Captions in Teams</span><span class="teamscaptionssource3">Microsoft</span></div>
+                        <div class="teamscaptionsdescontainer3"></div><span class="teamscaptionsdes3">Allows Teams to detect what’s said in meetings and present real-time captions</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://support.microsoft.com/en-us/office/use-live-captions-in-a-teams-meeting-4be2d304-f675-4b57-8347-cbd000a21260" target="_blank">Get Teams Captions</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="zoomcaptions3 hide" id="6">
+                        <div class="zoomcaptionstitlecontainer3"><span class="zoomcaptionstitle3">Closed Captions in Zoom</span><span class="zoomcaptionssource3">Zoom</span></div>
+                        <div class="zoomcaptionsdescontainer3"></div><span class="zoomcaptionsdes3">Allows Zoom to detect what’s said in meetings and present real-time captions</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://support.zoom.us/hc/en-us/articles/207279736-Managing-and-viewing-closed-captioning#h_4cb4e874-d574-4e40-ab12-7d8fae1f71cc" target="_blank">Get Zoom Captions</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="noRecCard hide" id="noRecCardVID">
+                        <span class="noRecText">There are no technologies recommended from this category.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Translation Tools -->
+            <div class="translatingtools hide" id="translatingtoolsID"><span class="toolCategory">Translation Tools</span>
+                <div class="translatingtoolsline1 hide" id="translatingtoolsline1ID">
+                    <div class="microsofttranslator3 hide" id="7">
+                        <div class="microsofttranslatortitlecontainer3"><span class="microsofttranslatortitle3">Microsoft Translator</span><span class="microsofttranslatorsource3">Microsoft</span></div>
+                        <div class="microsofttranslatordescontainer3"></div><span class="microsofttranslatordes3">Translate and caption live conversations in over 70 languages, or translate words and phrases in Office</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://support.microsoft.com/en-us/topic/translate-text-into-a-different-language-287380e4-a56c-48a1-9977-f2dca89ce93f?ui=en-us&rs=en-us&ad=us" target="_blank">Get Microsoft Translator</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="dictate3 hide" id="8">
+                        <div class="dictatetitlecontainer3"><span class="dictatetitle3">Dictate</span><span class="dictatesource3">Microsoft</span></div>
+                        <div class="dictatedescontainer3"></div><span class="dictatedes3">Dictation lets you use speech-to-text to author content in Office. Use your voice to quickly create documents, emails, notes or presentations</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://support.microsoft.com/en-us/office/dictate-in-microsoft-365-eab203e1-d030-43c1-84ef-999b0b9675fe" target="_blank">Get Dictate</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="a11ychecker3 hide" id="9">
+                        <div class="a11ycheckertitlecontainer3"><span class="a11ycheckertitle3">Accessibility Checker</span><span class="a11ycheckersource3">Microsoft</span></div>
+                        <div class="a11ycheckerdescontainer3"></div><span class="a11ycheckerdes3">In PowerPoint, Word, Excel, and PDF, finds accessibility problems with a list of suggestions</span>
+                        <div class="requestTool"><span class="requestToolText"><a href="https://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f" target="_blank">Get Accessibility Checker</a></span></div>
+                        <div class="requestArrow"><span><i class="fa fa-angle-right"></i></span></div>
+                    </div>
+                    <div class="noRecCard hide" id="noRecCardTID">
+                        <span class="noRecText">There are no technologies recommended from this category.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
